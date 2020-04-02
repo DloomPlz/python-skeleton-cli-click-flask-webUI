@@ -15,22 +15,24 @@ u good to go
 This POC was created to have an easy access to a skeleton of a command CLI written in Python with the framework *click* (cf. https://github.com/pallets/click) with a simple web-UI written with flask.
 
 - 3 simple actions with CLI are avaible : addition / hello / web
-  - addition will do a simple addition of 2 number inputs of the user
+
+
+Addition will do a simple addition of 2 number inputs of the user
     - example : `python3 app.py addition --nb1 1 --nb2 2`
 
 ```text
 3
 ```
 
-    - hello will greet the user with the given username and if he's alive or not (idk why i did that???)
-        - example : `python3 app.py hello --name sasha --not-alive`
+Hello will greet the user with the given username and if he's alive or not (idk why i did that???)
+    - example : `python3 app.py hello --name sasha --not-alive`
 
 ```text
 Hello sasha! I am glad you are alive!
 ```
 
-    - the web UI is launchable with the web flag
-        - example : `python3 app.py web`
+The web UI is launchable with the web flag
+    - example : `python3 app.py web`
 
 ```text
 Launching web UI ...
