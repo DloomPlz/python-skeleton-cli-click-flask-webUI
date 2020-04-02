@@ -18,21 +18,24 @@ This POC was created to have an easy access to a skeleton of a command CLI writt
 
 
 Addition will do a simple addition of 2 number inputs of the user
-    - example : `python3 app.py addition --nb1 1 --nb2 2`
+
+- example : `python3 app.py addition --nb1 1 --nb2 2`
 
 ```text
 3
 ```
 
 Hello will greet the user with the given username and if he's alive or not (idk why i did that???)
-    - example : `python3 app.py hello --name sasha --not-alive`
+    
+- example : `python3 app.py hello --name sasha --not-alive`
 
 ```text
 Hello sasha! I am glad you are alive!
 ```
 
 The web UI is launchable with the web flag
-    - example : `python3 app.py web`
+   
+- example : `python3 app.py web`
 
 ```text
 Launching web UI ...
