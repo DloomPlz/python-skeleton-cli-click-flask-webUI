@@ -3,9 +3,9 @@ from core import actions
 
 @click.command()
 @click.option('--name', required=True, help='The name of the user!', multiple=False)
-@click.option('--alive', is_flag=True, required=False, help='The user is alive', multiple=False)
-def hello(name, alive):
-    result = actions.say_hello(name,alive)
+@click.option('--pokemon', is_flag=True, required=False, help='The user loves pokemon', multiple=False)
+def hello(name, pokemon):
+    result = actions.say_hello(name,pokemon)
     print(result)
 
 @click.command()
@@ -13,5 +13,5 @@ def hello(name, alive):
 @click.option('--nb2', required=True, help='The second number to addition', multiple=False)
 def addition(nb1, nb2):
     result = actions.do_addition(nb1,nb2)
-    print(result)
+    print(nb1 + " + " + nb2 + " = " + result)
     

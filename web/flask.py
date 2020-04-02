@@ -30,14 +30,14 @@ def addition_page():
 @app.route("/greetPage", methods = ['POST'])
 def greet_page():
     name=request.form['name']
-    alive=request.form['alive']
-    b_alive=True
-    if alive != "True":
-        b_alive=False
+    pokemon=request.form['pokemon']
+    b_pokemon=True
+    if pokemon != "True":
+        b_pokemon=False
     if not name:
         error="Name is not declared. Please enter a name."
         return render_template("home.html",error=error)
-    result = actions.say_hello(name,b_alive)
+    result = actions.say_hello(name,b_pokemon)
     return render_template("result.html",name=name,result=result)
 
 if __name__ == "__main__":
