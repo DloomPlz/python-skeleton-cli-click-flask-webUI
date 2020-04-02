@@ -48,12 +48,12 @@ Launching web UI ...
 
 For this example, i did this UI :
 
-![example UI](/Users/pulsz/dev/ProjetPerso/SimpleCLI-webUI/exampleUI.png)
+![example UI](./exampleUI.png)
 
 Greeting example :
 
-![pokemon example UI](/Users/pulsz/dev/ProjetPerso/SimpleCLI-webUI/pokemonExampleUI.png)
+![pokemon example UI](./pokemonExampleUI.png)
 
 Addition example :
 
-![addition example UI](/Users/pulsz/dev/ProjetPerso/SimpleCLI-webUI/additionExampleUI.png)
+![addition example UI](./additionExampleUI.png)
