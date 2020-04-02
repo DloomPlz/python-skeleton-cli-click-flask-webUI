@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  background: #eaedf1;
+  font-family: 'Lato', sans-serif;
+}
+
+.welcome{
+	width:15%;
+	height:15%;
+	  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.container{
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  width:100%;
+}
+
+.half-container{
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  width:45%;
+}
+
+.btn.green {box-shadow: 0px 4px 0px #87a86f;}
+.btn.green:active {box-shadow: 0 0 #87a86f; background-color: #87a86f;}
+.btn.green:hover {background-color: #d2d9ce;}
+.btn.orange{box-shadow:0px 4px 0px #ffa500;}
+.btn.orange:active {box-shadow: 0 0 #ff4c4b; background-color: #fbb638;}
+.btn.orange:hover {background-color: #ffc55b;}
+.btn.red {box-shadow:0px 4px 0px #E04342;}
+.btn.red:active {box-shadow: 0 0 #ff4c4b; background-color: #ff4c4b;}
+.btn.red:hover {background-color: #fbb3b3;}
+.btn.blue {box-shadow: 0px 4px #74a3b0;}
+.btn.blue:active {box-shadow: 0 0 #74a3b0; background-color: #709CA8;}
+.btn.blue:hover {background-color: #b3c4c8;}
+.btn.purple {box-shadow:0px 4px 0px #AD83A8;}
+.btn.purple:active {box-shadow: 0 0 #BA8CB5; background-color: #BA8CB5;}
+.btn.purple:hover {background-color: #dbccda;}
+.btn.cyan {box-shadow:0px 4px 0px #73B9C9;}
+.btn.cyan:active {box-shadow: 0 0 #73B9C9; background-color: #70B4C4;}
+.btn.cyan:hover {background-color: #9fd3e0;}
+.btn.yellow {box-shadow:0px 4px 0px #D1B757;}
+.btn.yellow:active {box-shadow: 0 0 #ff4c4b; background-color: #D6BB59;}
+.btn.yellow:hover {background-color: #f1df9f;}
+.btn {
+	color: black;	
+	padding: 15px 25px;
+	display: inline-block;
+	border: 1px solid rgba(0,0,0,0.21);
+	border-bottom-color: rgba(0,0,0,0.34);
+	text-shadow:0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.34) inset, 
+				      0 2px 0 -1px rgba(0,0,0,0.13), 
+				      0 3px 0 -1px rgba(0,0,0,0.08), 
+				      0 3px 13px -1px rgba(0,0,0,0.21);
+}
+.btn:active {
+	top: 1px;
+	border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+	position: relative;
+}
+.btn:hover {
+	border-color: rgba(0,0,0,0.45) rgba(0,0,0,0.45) rgba(0,0,0,0.45);
+}
+
+.large{
+	width:50%;
+	height:30%;
+	font-size:150%;
+	margin-top: 5%;
+	margin-bottom: 1%;
+	font-family: 'Michelin', sans-serif;
+}
+
+input{
+  margin:2%;
+}
+
+p{font-size:150%;}
+
+.error {
+	color:red;
+}
+
+#repo_name{
+	height:50px;
+	font-size: 125%
+}
+
+.container p{
+	margin: 2%;
+}
+
+.container .home-form{
+    width:550px;                     
+    display:inline-block;  
+    margin:1em;      
+}
+
+.container h2{
+	margin-bottom: 2%;
+}
+
+.instances{
+	width:20%;
+}
+
+
+.home-btn {
+  background-color: #27509B;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.home-btn:hover {
+  background-color: #004F9F;
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-bottom: 1%;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
