@@ -27,10 +27,10 @@ Addition will do a simple addition of 2 number inputs of the user
 
 Hello will greet the user with the given username and if he's alive or not (idk why i did that???)
     
-- example : `python3 app.py hello --name sasha --not-alive`
+- example : `python3 app.py hello --name sasha --pokemon`
 
 ```text
-Hello sasha! I am glad you are alive!
+Hello sasha! WOW I'M A POKEMON FAN TOO!
 ```
 
 The web UI is launchable with the web flag
