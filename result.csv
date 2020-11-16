@@ -1,0 +1,11 @@
+OS, platformType, hostType , nbCPUID, nbLaunch, TimeSleep(ms), Detection rate (%)
+posix,Darwin19.6.0,physical,10,10,1,1
+posix,Darwin19.6.0,physical,10,10,1,1
+posix,Darwin19.6.0,physical,10,10,1,1
+posix,Darwin19.6.0,physical,10,10,1,1
+posix,Darwin19.6.0,physical,10,10,1,1
+posix,Darwin19.6.0,physical,10,10,1,1
+posix,Darwin19.6.0,physical,10,10,1,1
+posix,Darwin19.6.0,physical,10,10,1,1
+posix,Darwin19.6.0,physical,10,10,1,1
+posix,Darwin19.6.0,physical,10,10,1,1

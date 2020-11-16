@@ -1,17 +1,18 @@
 import click
 from core import actions
 
-@click.command()
-@click.option('--name', required=True, help='The name of the user!', multiple=False)
-@click.option('--pokemon', is_flag=True, required=False, help='The user loves pokemon', multiple=False)
-def hello(name, pokemon):
-    result = actions.say_hello(name,pokemon)
-    print(result)
 
 @click.command()
-@click.option('--nb1', required=True, help='The first number to addition', multiple=False)
-@click.option('--nb2', required=True, help='The second number to addition', multiple=False)
-def addition(nb1, nb2):
-    result = actions.do_addition(nb1,nb2)
-    print(nb1 + " + " + nb2 + " = " + result)
+@click.option('--sleep', required=False, default=1, help='Number of Millisecond sleep between detector launch',type=int, multiple=False)
+@click.option('--nbcpuid', required=False, default=10, help='Number of CPUID to test', multiple=False, type=int)
+@click.option('--nblaunch', required=False, default=100, help='Number of tests to launch', multiple=False, type=int)
+@click.option('--virtual', is_flag=True, help='Add this flag if host is virtual', multiple=False)
+def LinuxLaunch(sleep, nbcpuid, nblaunch, virtual):
+    output = actions.launchTest(sleep, nbcpuid,nblaunch, virtual)
+    f = open("result.csv", "a")
+    for o in output:
+    	f.write(o+"\n")
+    f.close()
+
+
     
