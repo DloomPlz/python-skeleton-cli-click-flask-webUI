@@ -15,19 +15,26 @@ def launchTest(sleep, nbCPUID, nbLaunch, virtual):
 	f.write(contents)
 	f.close()
 
+	#Compilation avec nouveau fichier asm
+	#os.system('../RUNME64.sh')
+
 	# Lancement du binaire et recuperation du code retour
 	result=[]
 	for i in range(0,nbLaunch):
-		result.append(os.system('../Detector'))
+		#result.append(os.system('../Detector'))
+		result.append(os.popen('../Detector').read())
 		time.sleep(sleep)
 	ratio = 0
 	for r in result:
 		# Calculer le pourcentage de detection
-		ratio += r
+		ratio += int(r)
 	ratio = (ratio/nbLaunch) * 100
 
 	# Remise en etat initial du fichier asm
 	copyfile("../dump.asm","../_Detector.asm")
+
+	# Delete temp file
+	os.remove("../dump.asm")
 	return formatCSVOutput(sleep, nbCPUID, nbLaunch, virtual, ratio)
 
 
