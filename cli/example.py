@@ -10,6 +10,7 @@ from core import actions
 def LinuxLaunch(sleep, nbcpuid, nblaunch, virtual):
     output = actions.launchTest(sleep, nbcpuid,nblaunch, virtual)
     f = open("result.csv", "a")
+    f.write("Processor, OS Name, OS version, hote Type, nbCpuid, nbLaunch, TimeSleep(ms), Detection Ratio(%)\n")
     for o in output:
     	f.write(o+"\n")
     f.close()
